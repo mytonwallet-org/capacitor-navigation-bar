@@ -33,16 +33,16 @@ No configuration required for this plugin.
 
 <docgen-index>
 
-- [`show()`](#show)
-- [`hide()`](#hide)
-- [`setColor(...)`](#setcolor)
-- [`setTransparency(...)`](#settransparency)
-- [`getColor()`](#getcolor)
-- [`addListener(NavigationBarPluginEvents.SHOW, ...)`](#addlistenernavigationbarplugineventsshow)
-- [`addListener(NavigationBarPluginEvents.HIDE, ...)`](#addlistenernavigationbarplugineventshide)
-- [`addListener(NavigationBarPluginEvents.COLOR_CHANGE, ...)`](#addlistenernavigationbarplugineventscolor_change)
-- [Interfaces](#interfaces)
-- [Enums](#enums)
+* [`show()`](#show)
+* [`hide()`](#hide)
+* [`setColor(...)`](#setcolor)
+* [`setTransparency(...)`](#settransparency)
+* [`getColor()`](#getcolor)
+* [`addListener(NavigationBarPluginEvents.SHOW, ...)`](#addlistenernavigationbarplugineventsshow-)
+* [`addListener(NavigationBarPluginEvents.HIDE, ...)`](#addlistenernavigationbarplugineventshide-)
+* [`addListener(NavigationBarPluginEvents.COLOR_CHANGE, ...)`](#addlistenernavigationbarplugineventscolor_change-)
+* [Interfaces](#interfaces)
+* [Enums](#enums)
 
 </docgen-index>
 
@@ -57,7 +57,8 @@ show() => Promise<void>
 
 Display the navigation bar.
 
----
+--------------------
+
 
 ### hide()
 
@@ -67,7 +68,8 @@ hide() => Promise<void>
 
 Hide the navigation bar.
 
----
+--------------------
+
 
 ### setColor(...)
 
@@ -76,13 +78,14 @@ setColor(options: ColorParameters) => Promise<void>
 ```
 
 Change the color of the navigation bar.
-\*Support alpha hexadecimal numbers.
+*Support alpha hexadecimal numbers.
 
 | Param         | Type                                                        |
 | ------------- | ----------------------------------------------------------- |
 | **`options`** | <code><a href="#colorparameters">ColorParameters</a></code> |
 
----
+--------------------
+
 
 ### setTransparency(...)
 
@@ -96,7 +99,8 @@ Set the Transparency
 | ------------- | ---------------------------------------- |
 | **`options`** | <code>{ isTransparent: boolean; }</code> |
 
----
+--------------------
+
 
 ### getColor()
 
@@ -108,7 +112,8 @@ Gets the current color of the navigation bar in Hexadecimal.
 
 **Returns:** <code>Promise&lt;{ color: string; }&gt;</code>
 
----
+--------------------
+
 
 ### addListener(NavigationBarPluginEvents.SHOW, ...)
 
@@ -125,7 +130,8 @@ Event fired after navigation bar is displayed
 
 **Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
----
+--------------------
+
 
 ### addListener(NavigationBarPluginEvents.HIDE, ...)
 
@@ -142,7 +148,8 @@ Event fired after navigation bar is hidden
 
 **Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
----
+--------------------
+
 
 ### addListener(NavigationBarPluginEvents.COLOR_CHANGE, ...)
 
@@ -159,9 +166,11 @@ Event fired after navigation bar color is changed
 
 **Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
----
+--------------------
+
 
 ### Interfaces
+
 
 #### ColorParameters
 
@@ -170,13 +179,16 @@ Event fired after navigation bar color is changed
 | **`color`**       | <code>string</code>  | Sets the new color of the navigation bar.                                 |
 | **`darkButtons`** | <code>boolean</code> | Sets whether the default navigation bar buttons should be black or white. |
 
+
 #### PluginListenerHandle
 
 | Prop         | Type                                      |
 | ------------ | ----------------------------------------- |
 | **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
 
+
 ### Enums
+
 
 #### NavigationBarPluginEvents
 
